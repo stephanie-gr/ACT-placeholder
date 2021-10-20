@@ -1,17 +1,29 @@
 <template>
   <view class="container">
-    <text class="text-color-primary">My Vue Native App</text>
+    <Statusbar />
+    <Header title="ACT-APP"/>
   </view>
 </template>
+
+<script>
+  import Statusbar from './components/Statusbar';
+  import Header from './components/Header';
+
+  export default {
+    components: {
+      Statusbar,
+      Header
+    }
+  }
+</script>
 
 <style>
 .container {
   background-color: white;
-  align-items: center;
-  justify-content: center;
   flex: 1;
 }
-.text-color-primary {
-  color: blue;
+.statusbar {
+  background-color: #FFCE00;
+  height: 50px;
 }
 </style>
