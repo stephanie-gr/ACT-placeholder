@@ -5,6 +5,6 @@
 <style>
   .statusbar {
     background-color: rgb(162, 162, 162);
-    height: 10%;
+    height: 20px;
   }
 </style>
