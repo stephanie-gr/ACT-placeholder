@@ -15,20 +15,19 @@
       v-for="todo in todos" 
       :key="todo.id" 
     >
+    <PanGestureHandler>
       <text>{{ todo.title }}</text>
+    </PanGestureHandler>
     </view>
   </view>
 
-  <!-- <ScrollTest /> -->
   </view>
-
 </template>
 
 <script>
   import Statusbar from './components/Statusbar';
   import Header from './components/Header';
-  // import ScrollView from './components/ScrollTest';
-  // import ScrollTest from './components/ScrollTest.vue';
+  import { PanGestureHandler } from 'react-native-gesture-handler';
 
   export default {
     data () {
@@ -51,7 +50,7 @@
     components: {
       Statusbar,
       Header,
-      // ScrollTest
+      PanGestureHandler
     },
     methods: {
       newTodo () {
